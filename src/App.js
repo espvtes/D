@@ -4,8 +4,6 @@ import UserInput from './userInput.js';
 import UserOutput from './userOutput.js';
 
 
-
-
 export default class App extends React.Component {
   state={
     userName:"supermax"
@@ -18,10 +16,9 @@ export default class App extends React.Component {
   render() {    
     return(
     <div className="App">
-    <h1>Real App is working!!!</h1>
-    <p>The  best practices:</p>
-    <button onClick={()=>this.switchNameHandler('John')}>Switch your UserName</button>
-    <UserInput changed={this.userNameChangeHandler}/>
+    <UserInput 
+    changed={this.userNameChangeHandler}
+    value={this.state.userName}/>
     <UserOutput userName={this.state.userName}/>
     
     <UserOutput userName='Max'/>

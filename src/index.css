@@ -12,3 +12,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* userInput */
+
+.UserOutput{
+  width: 60%;
+  padding:16px;
+  margin: 16px;
+  border: 2px solid black;
+  background-color: #ccc;
+  text-align: center;
+}
