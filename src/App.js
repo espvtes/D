@@ -31,11 +31,10 @@ export default class App extends React.Component {
     <p>The  best practices:</p>
     <button onClick={()=>this.switchNameHandler('John')}>Switch your Name</button>
     <UserInput />
-    <UserOutput 
-    name={this.state.UserOutput[0].name} 
-    age={this.state.UserOutput[0].age}/>
+    <UserOutput name='Max'/>
     
-    <UserOutput name='Joseph' age='23'/>
+    <UserOutput name='Max'/>
+    <UserOutput name='Max'/>
     </div>
     );
     
