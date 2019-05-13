@@ -1,11 +1,11 @@
 import React from 'react';
 
-export class UserInput extends React.Component{
-    render(){
+const userInput = props =>{
         return(
             <div className="userInput">
-            <input type="text"/>
+            <input type="text" onChange={props.changed}/>
             </div>
         );
     }
-}
+
+export default userInput;
