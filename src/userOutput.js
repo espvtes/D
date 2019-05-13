@@ -4,7 +4,7 @@ const UserOutput = props => {
     
         return(
             <div className="userOutput">
-            <p>I am {props.name} and I have {props.age} years old</p>
+            <p>Username:{props.userName}</p>
             <p>He is my sister Melissa and she has 40 years old</p>
             
             </div>

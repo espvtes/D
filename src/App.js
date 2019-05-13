@@ -7,22 +7,8 @@ import UserOutput from './userOutput.js';
 
 
 export default class App extends React.Component {
-  constructor(props){
-    super(props);
-    this.state={
-      UserOutput:[
-        {name: 'Marcos', age:33},
-        {name: 'Sofia', age:40}
-      ]
-    }
-  }
-  switchNameHandler = newName =>{
-    this.setState={
-      UserOutput:[
-        {name: 'newName', age:33},
-        {name: 'Sofia', age:40}
-      ]
-    }
+  state={
+    userName:"supermax"
   }
   render() {    
     return(
@@ -31,10 +17,10 @@ export default class App extends React.Component {
     <p>The  best practices:</p>
     <button onClick={()=>this.switchNameHandler('John')}>Switch your Name</button>
     <UserInput />
-    <UserOutput name='Max'/>
+    <UserOutput userName={this.state.userName}/>
     
-    <UserOutput name='Max'/>
-    <UserOutput name='Max'/>
+    <UserOutput userName='Max'/>
+    <UserOutput userName='Max'/>
     </div>
     );
     
